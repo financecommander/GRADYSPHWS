@@ -56,8 +56,8 @@ fi
 
 echo ""
 echo "=== DONE ==="
-echo "Grady's:   http://34.148.8.51/"
-echo "Calculus:  http://34.148.8.51/calculus"
+echo "Grady's:   http://35.227.111.161/"
+echo "Calculus:  http://35.227.111.161/calculus"
 echo ""
 echo "Useful commands:"
 echo "  pm2 status       — check running apps"

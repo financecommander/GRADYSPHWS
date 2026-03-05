@@ -102,5 +102,5 @@ gcloud compute ssh "$VM_NAME" --zone="$ZONE" --command='
 
 echo ""
 echo "=== ALL DONE ==="
-echo "Grady's:   http://34.148.8.51/"
-echo "Calculus:  http://34.148.8.51/calculus"
+echo "Grady's:   http://35.227.111.161/"
+echo "Calculus:  http://35.227.111.161/calculus"
