@@ -54,47 +54,57 @@ export default function HomePage() {
   return (
     <>
       {/* ========== HERO ========== */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[82vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-pub-dark via-pub-dark/95 to-pub-dark" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-pub-green)_0%,_transparent_70%)] opacity-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-pub-green)_0%,_transparent_70%)] opacity-15" />
 
-        <div className="relative z-10 text-center px-4 py-32">
+        <div className="relative z-10 text-center px-4 pt-28 pb-20 sm:pt-32 sm:pb-24 max-w-[40rem] mx-auto">
           <div className="animate-fade-in-up">
-            <CrestLogo size="lg" className="mx-auto mb-8" />
+            <CrestLogo size="lg" className="mx-auto mb-8 scale-110" />
           </div>
 
-          <h1 className="animate-fade-in-up animation-delay-200 font-[family-name:var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-bold text-pub-cream mb-4">
+          <h1 className="animate-fade-in-up animation-delay-200 font-[family-name:var(--font-playfair)] text-6xl md:text-7xl lg:text-8xl font-bold text-pub-cream mb-4">
             Grady&apos;s
-            <span className="block text-pub-gold text-3xl md:text-4xl lg:text-5xl mt-2">
+            <span className="block text-pub-gold text-4xl md:text-5xl lg:text-6xl mt-2">
               Public House
             </span>
           </h1>
 
-          <p className="animate-fade-in-up animation-delay-400 text-pub-muted text-xl md:text-2xl mb-10 tracking-wide">
+          <p className="animate-fade-in-up animation-delay-400 text-pub-muted text-xl md:text-2xl tracking-wide">
             A Proper Public House in Seekonk
           </p>
 
-          <div className="animate-fade-in-up animation-delay-600 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/menu"
-              className="px-8 py-4 bg-pub-green text-pub-cream font-semibold rounded hover:bg-pub-green-light transition-all hover:scale-105"
-            >
-              View Menu
-            </Link>
-            <a
-              href="https://www.opentable.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-pub-red text-pub-cream font-semibold rounded hover:bg-pub-red-light transition-all hover:scale-105"
-            >
-              Reserve a Table
-            </a>
+          <p className="animate-fade-in-up animation-delay-400 mt-4 text-pub-cream/80 text-base md:text-lg">
+            Irish roots. New England table. Strong whiskey and a seat for everyone.
+          </p>
+
+          <div className="animate-fade-in-up animation-delay-600 mt-7">
+            <div className="h-px w-56 bg-pub-cream/15 mx-auto" />
+
+            <div className="mt-7 flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/menu"
+                className="min-w-[160px] px-7 py-3.5 bg-pub-green text-pub-cream text-sm sm:text-base font-semibold tracking-wider uppercase rounded-md hover:bg-pub-green-light transition-all hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                View Menu
+              </Link>
+              <a
+                href="https://www.opentable.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="min-w-[160px] px-7 py-3.5 bg-pub-red text-pub-cream text-sm sm:text-base font-semibold tracking-wider uppercase rounded-md hover:bg-pub-red-light transition-all hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                Reserve Table
+              </a>
+            </div>
+
+            <div className="mt-7 h-px w-56 bg-pub-cream/15 mx-auto" />
           </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <svg
-            className="w-6 h-6 text-pub-gold/50"
+            className="w-8 h-8 text-pub-gold/60"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -106,6 +116,9 @@ export default function HomePage() {
               d="M19 14l-7 7m0 0l-7-7"
             />
           </svg>
+          <div className="mt-1 text-xs tracking-widest uppercase text-pub-cream/50">
+            Explore
+          </div>
         </div>
       </section>
 

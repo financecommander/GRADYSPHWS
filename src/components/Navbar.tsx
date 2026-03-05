@@ -32,12 +32,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm text-pub-cream/80 hover:text-pub-gold transition-colors"
+                className="px-4 py-2 text-sm text-pub-cream/80 hover:text-pub-gold transition-colors"
               >
                 {link.label}
               </Link>
